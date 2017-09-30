@@ -14,6 +14,7 @@
 		B9913B761F7F314F000EE626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9913B741F7F314F000EE626 /* LaunchScreen.storyboard */; };
 		B9913B811F7F3150000EE626 /* proxSpeakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9913B801F7F3150000EE626 /* proxSpeakerTests.swift */; };
 		B9913B8C1F7F3150000EE626 /* proxSpeakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9913B8B1F7F3150000EE626 /* proxSpeakerUITests.swift */; };
+		B9913B9A1F7FF185000EE626 /* Sockpuppet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9913B991F7FF185000EE626 /* Sockpuppet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B9913B871F7F3150000EE626 /* proxSpeakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = proxSpeakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9913B8B1F7F3150000EE626 /* proxSpeakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proxSpeakerUITests.swift; sourceTree = "<group>"; };
 		B9913B8D1F7F3150000EE626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9913B991F7FF185000EE626 /* Sockpuppet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sockpuppet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				B9913B6B1F7F314F000EE626 /* AppDelegate.swift */,
 				B9913B6D1F7F314F000EE626 /* ViewController.swift */,
+				B9913B991F7FF185000EE626 /* Sockpuppet.swift */,
 				B9913B6F1F7F314F000EE626 /* Main.storyboard */,
 				B9913B721F7F314F000EE626 /* Assets.xcassets */,
 				B9913B741F7F314F000EE626 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				B9913B6E1F7F314F000EE626 /* ViewController.swift in Sources */,
 				B9913B6C1F7F314F000EE626 /* AppDelegate.swift in Sources */,
+				B9913B9A1F7FF185000EE626 /* Sockpuppet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
