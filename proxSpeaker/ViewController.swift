@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  proxSpeaker
 //
-//  Created by Groot Groot on 9/29/17.
+//  Created by Harrison Downs on 9/29/17.
 //  Copyright © 2017 Harrison Downs. All rights reserved.
 //
 
