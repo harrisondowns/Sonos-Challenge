@@ -511,6 +511,7 @@
 				B9913B921F7F3150000EE626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9913B931F7F3150000EE626 /* Build configuration list for PBXNativeTarget "proxSpeakerTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +520,7 @@
 				B9913B951F7F3150000EE626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9913B961F7F3150000EE626 /* Build configuration list for PBXNativeTarget "proxSpeakerUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +529,7 @@
 				B9913B981F7F3150000EE626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

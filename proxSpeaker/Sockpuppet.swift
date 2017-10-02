@@ -29,18 +29,25 @@ class Sockpuppet {
         inputStream.open()
         outputStream.open()
         
+        print ("Open!")
         
     }
 
     /* write to the socket */
     func write(outputString : String){
+        print ("write()")
         let asUInt8Array = String(outputString.characters).utf8.map{ UInt8($0) }
         for c in asUInt8Array{
             buffer.append(c);
+            print(c)
         }
+        
+        
+        
         outputStream.write(&buffer, maxLength: buffer.count)
         
         buffer.removeAll()
+        print("WRITING!")
     }
     
     /* read from the socket */

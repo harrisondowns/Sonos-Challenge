@@ -15,9 +15,13 @@ class ViewController: UIViewController {
     var sock : Sockpuppet!
     
     func startSocket(){
-        sock = Sockpuppet(a: "127.0.0.1", p: 56565)
+        sock = Sockpuppet(a: "127.0.0.1", p: 56565)//10.244.140.22", p: 56565)
+        
     }
     
+    @IBAction func sendHello(){
+        sock.write(outputString: "hullo\n")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,30 +33,5 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func socketsForDays(){
-        let addr = "127.0.0.1"
-        let port = 56565
-        
-      
-        var inp :InputStream?
-        var out :OutputStream?
-        var buffer : [UInt8] = [20, 32, 64, 80]
-        Stream.getStreamsToHost(withName: addr, port: port, inputStream: &inp, outputStream: &out)
-        let inputStream = inp!
-        let outputStream = out!
-        inputStream.open()
-        outputStream.open()
-        
-        var readByte :UInt8 = 0
-        while inputStream.hasBytesAvailable {
-            inputStream.read(&readByte, maxLength: 1)
-        }
-        
-        // buffer is a UInt8 array containing bytes of the string "Jonathan Yaniv.".
-        outputStream.write(&buffer, maxLength: buffer.count)
-    }
-    
-
-
 }
 
