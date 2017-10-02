@@ -32,6 +32,7 @@ class Sockpuppet {
         
     }
 
+    /* write to the socket */
     func write(outputString : String){
         let asUInt8Array = String(outputString.characters).utf8.map{ UInt8($0) }
         for c in asUInt8Array{
@@ -42,6 +43,7 @@ class Sockpuppet {
         buffer.removeAll()
     }
     
+    /* read from the socket */
     func read() -> String{
         var readByte :UInt8 = 0
         var buff = [UInt8]()
