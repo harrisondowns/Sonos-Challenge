@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 class Sockpuppet {
     private var addr : String
     private var port : Int
@@ -39,7 +40,7 @@ class Sockpuppet {
         let asUInt8Array = String(outputString.characters).utf8.map{ UInt8($0) }
         for c in asUInt8Array{
             buffer.append(c);
-            print(c)
+         //   print(c)
         }
         
         

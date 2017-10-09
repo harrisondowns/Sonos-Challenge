@@ -15,12 +15,40 @@ class ViewController: UIViewController {
     var sock : Sockpuppet!
     
     func startSocket(){
-        sock = Sockpuppet(a: "127.0.0.1", p: 56565)//10.244.140.22", p: 56565)
+        sock = Sockpuppet(a: "172.20.10.3", p: 56565)//10.244.140.22", p: 56565)
         
+    }
+    
+    func grabTime(){
+        let d = Date().timeIntervalSince1970
+        let url = URL(string: "https://sonos-challenge.herokuapp.com/sensor1.txt?" + String(d))
+        
+        let task = URLSession.shared.dataTask(with: url!) { data, response, error in
+            guard error == nil else {
+                print(error!)
+                return
+            }
+            guard let data = data else {
+                print("Data is empty")
+                return
+            }
+            print(String(data: data, encoding: String.Encoding.utf8) as String!)
+            // let json = try! JSONSerialization.jsonObject(with: data, options: [])
+            //print(json)
+        
+        }
+        
+        task.resume()
+    }
+    
+    @IBAction func readHello(){
+      //  print(sock.read())
+        grabTime()
     }
     
     @IBAction func sendHello(){
         sock.write(outputString: "hullo\n")
+        print(sock.read())
     }
     override func viewDidLoad() {
         super.viewDidLoad()
