@@ -1,0 +1,26 @@
+# Uncomment this line to define a global platform for your project
+use_frameworks!
+
+
+workspace 'SonosSampleApp'
+project '../libs/SonosUtils.xcodproj'
+project 'SonosSampleApp.xcodeproj'
+
+target :SonosUtils do
+    platform :ios, '8.0'
+    pod 'Starscream', :git => 'https://github.com/sonos/Starscream.git'
+    project '../libs/SonosUtils.xcodeproj'
+end
+
+target :SonosSampleApp do
+    platform :ios, '8.0'
+    pod 'Starscream', :git => 'https://github.com/sonos/Starscream.git'
+	pod 'MBProgressHUD', '~> 0.9.2'
+	pod 'CocoaAsyncSocket', '7.4.2'
+    project 'SonosSampleApp.xcodeproj'
+end
+
+#target 'SonosSampleAppTests' do
+#
+#end
+
