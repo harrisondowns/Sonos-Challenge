@@ -52,10 +52,15 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        Timer.scheduledTimer(timeInterval: 1.0, target: self,   selector: (#selector(rip)), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view, typically from a nib.
         startSocket()
     }
 
+    func rip(){
+        print("yo")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
